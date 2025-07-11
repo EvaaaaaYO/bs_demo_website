@@ -1,0 +1,116 @@
+<!-- GITHUB部屬的檔案名稱須是index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">logo?</a>
+            <!-- 響應式按鈕(三條線，可展開) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 靠左位置 mr-auto(舊版本) -> me-auto(新版本)  -->
+                <!-- 靠右位置 ml-auto -> ms-auto   -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#news">news</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+
+                </ul>
+                <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container full">
+            首頁內容
+        </div>
+
+
+    </section>
+    <section id="about">
+        <div class="container full">
+            關於我們
+        </div>
+
+
+    </section>
+    <section id="news">
+        <div class="container full">
+            最新消息
+        </div>
+
+
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<style>
+    /* 視窗滿版設定 */
+    html,body{
+        width: 100%;
+        height: 100%;}
+    section {
+        padding-top: 150px;
+        height: 100%;
+        /* 讓背景圖的主畫面等比例縮放直到罩在上面 */
+        background-size: cover; 
+/* 讓背景圖圖案不重複但會讓圖面硬撐大
+ background-repeat: no-repeat; */
+ /* 讓背景圖中心點對齊 */
+ background-position: center;
+    }
+
+    #home {
+        background-image: url('./bs素材與js/images/p0.jpg');
+    }
+
+    #about {
+        background-image: url('./bs素材與js/images/p1.jpg');
+    }
+
+    #news {
+        background-image: url('./bs素材與js/images/p2.jpg');
+    }
+</style>
